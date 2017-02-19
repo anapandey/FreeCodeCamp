@@ -1,3 +1,4 @@
+//assigning variables
 var getQuote=document.getElementById('quote');
 getQuote.innerHTML=getRandomQuote();
 var getButton=document.getElementById('clickButton');
@@ -6,16 +7,12 @@ var getImg=document.getElementById('twit');
 var getIcon=document.getElementById('icon');
 var getFlaticon=document.getElementById('flaticon');
 
+//opening Twitter page
 function postTwit(){
     window.open("https://twitter.com/intent/tweet?text="+getQuote.innerHTML);
 }
-function openIconpage(){
-     window.open("https://dribbble.com/olivers");
-}
-function openFlaticonpage(){
-     window.open("http://www.flaticon.com/");
-}
 
+//generating random quotes
 function displayQuote(){
     getQuote.innerHTML=getRandomQuote();
     var colors=['#779D7B','#9DA4B9','#475788','#7C3D35','#366135','#79785A','#50806D','#6F8251','#5B425F','#9E4262','#EE8665'];
@@ -26,6 +23,7 @@ function displayQuote(){
     getImg.style.backgroundColor=colors[randC];
    
 }
+//Creating a list of quotes
 function getRandomQuote(){
     var quoteList=['The day is what you make it! So why not make it a great one? - Steve Schulte',
                    'Write it on your heart that every day is the best day in the year.- Ralph Waldo Emerson',
@@ -41,8 +39,14 @@ function getRandomQuote(){
     var randInt=Math.floor(Math.random()*quoteList.length);
     return quoteList[randInt];
 }
-                    
-
+//opening page of the graphic artist                   
+function openIconpage(){
+     window.open("https://dribbble.com/olivers");
+}
+//opening flaticon page
+function openFlaticonpage(){
+     window.open("http://www.flaticon.com/");
+}
     
          
                   
