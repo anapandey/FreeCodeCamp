@@ -1,11 +1,19 @@
 var getQuote=document.getElementById('quote');
 getQuote.innerHTML=getRandomQuote();
 var getButton=document.getElementById('clickButton');
-var getWall=document.getElementById('wall');
+var getBody=document.getElementsByTagName('BODY')[0];
 var getImg=document.getElementById('twit');
+var getIcon=document.getElementById('icon');
+var getFlaticon=document.getElementById('flaticon');
 
 function postTwit(){
     window.open("https://twitter.com/intent/tweet?text="+getQuote.innerHTML);
+}
+function openIconpage(){
+     window.open("https://dribbble.com/olivers");
+}
+function openFlaticonpage(){
+     window.open("http://www.flaticon.com/");
 }
 
 function displayQuote(){
@@ -14,7 +22,7 @@ function displayQuote(){
     var randC =Math.floor(Math.random()*colors.length);
     getQuote.style.color=colors[randC];
     getButton.style.backgroundColor=colors[randC];
-    getWall.style.backgroundColor=colors[randC];
+    getBody.style.backgroundColor=colors[randC];
     getImg.style.backgroundColor=colors[randC];
    
 }
