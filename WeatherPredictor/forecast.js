@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var unit="&units=metric";
-    var apiKey="&APPID=d23737fe086028a8aeaea31d43a6817d";
+    var apiKey="&APPID=bd3f7455d381bcf20533ab474c8cbee5";
 //geolocation api call for city & country names
     $.getJSON('http://ip-api.com/json/?callback=?', function(data) {
         var mycity = data.city;
