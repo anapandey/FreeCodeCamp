@@ -1,0 +1,71 @@
+/* stylesheet by Ana Pandey*/
+
+body {
+    background-image: url('../windr.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+    height: 870px;
+}
+#main {
+    font-size: 1.5em;
+    height: 200px;
+}
+h1 {
+    font-weight: bold;
+    color: #FA8A4E;
+    font-size: 1.5em;
+}
+h3 {
+    color: wheat;
+}
+
+/* celcius/fahrenheit buttons */
+.btn-default {
+    height: 20px;
+    width: 30px;
+    font-size: 0.6em;
+    padding-top: 2px;
+    background-color: #FA620B;
+    color: #071C68;
+    border: 1px solid #071C68;
+}
+.btn-default:hover {
+    background-color: #071C68;
+    color: #FA620B;
+    border: 1px solid #FA620B;
+}
+
+/* search area */
+.jumbotron {
+    background-color: #034685;
+    opacity: 0.6;
+    margin-top: 100px;
+}
+.jumbotron p {
+    font-size: 1.1em;
+}
+#info {
+    color: darkgrey;
+}
+#city {
+    padding: 5px 10px 5px 10px;
+    color: #071C68;
+    font-weight: bold;
+    font-size: 1em;
+    border: 1px solid #071C68;
+}
+#button {
+    padding: 5px;
+    background-color: #071C68;
+    color: #FA620B;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+#error {
+    color: #851006;
+}
