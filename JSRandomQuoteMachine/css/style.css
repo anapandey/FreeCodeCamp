@@ -1,0 +1,60 @@
+/* stylesheet by Ana Pandey */
+
+body {
+    background-color:grey;
+    color:#A94916;    
+}
+h1 {
+    font-size:50px;
+    text-shadow:3px 3px 5px #2C377A;
+    } 
+#quotebox {
+    height:250px;
+    margin-top:50px;
+    padding:100px 50px 0 50px;
+    }
+#quote {
+    font-size:1.5em;
+    }
+#buttonbox {
+    height:200px;
+    margin-bottom:100px;
+    padding:0 50px 20px 50px;
+    }
+button {
+    height:55px;
+    width:110px;
+    margin-top:100px;
+    font-size:1.2em;
+    border:none;
+    background-color:grey;
+    float:right;
+    }
+button p {
+    color:white;
+    }
+button p:hover {
+    color:white;
+}
+#twit {
+    width:55px;
+    height:55px;
+    border:1px solid grey;
+    background-color:grey;
+    margin-top:100px;
+    padding:0 5px 10px 5px;
+    float:left;
+    }
+.white {
+    background-color:antiquewhite;
+    }
+.center {
+    text-align:center;
+    }
+#icon:hover {
+    text-decoration:none;
+    }
+#flaticon:hover {
+    text-decoration:none;
+    }
+    
