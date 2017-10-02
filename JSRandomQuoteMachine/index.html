@@ -10,57 +10,49 @@
     <meta name="author" content="Ana Pandey">
 
     <!-- link to external stylesheets -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap+Condensed" rel="stylesheet">
 
     <!-- link to external scripts -->
     <script src="jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-   
+
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <!---header-->
-        <div class="row center">
-            <div class="col-md-12 col-sm-12">
-                <h1>Random Quote Machine</h1>
+    <div id="container">
+        <!---header area for app logo -->
+        <header>
+            <div>
+                <h2>RANDOM</h2>
+                <h1>QUOTE</h1>
             </div>
-        </div>
-        <!---area for quotes-->
-        <div class="container white" id="quotebox">
-            <div class="row center">
-                <div class="col-md 12 col-sm-12">
-                    <p class="lead" id="quote"></p>
-                </div>
-            </div>
-        </div>
-        <!---area for buttons -->
-        <div class="container white" id="buttonbox">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <a onclick="postTwit();">
-                        <img id='twit' src="https://anapandey.files.wordpress.com/2017/02/twitter4.png">
-                    </a>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <button id='clickButton' onclick="displayQuote();">
-                        <p>New Quote</p>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!---copyright & attribution -->
-        <div class="row center">
-            <div class="col-md-12 col-sm-12">
-                <p>By Ana Pandey, Graphics : <a id="icon" href="#" onclick="openIconpage();">Oliver</a> from <a id="flaticon" href="#" onclick="openFlaticonpage();">Flaticon</a></p>
-            </div>
-        </div>
+        </header>
+        <!---main area for quote display-->
+        <main>
+            <section>
+                <p id="quote"></p>
+            </section>
+            <section>
+                <a onclick="postTwit();">
+                    <img id="twit" src="twitter-64.png" alt="twitter logo">
+                </a>
+
+            </section>
+            <section>
+
+                <button id='clickButton' onclick="displayQuote();">
+                    Get your Quote
+                </button>
+            </section>
+        </main>
+
+
     </div>
-    
-    <!-- link to randomQuote script -->
-     <script type="text/javascript" src="js/randomQuote.js"></script>
+    <!---link to random quote js script -->
+    <script type="text/javascript" src="js/randomQuote.js"></script>
 </body>
 
 </html>

@@ -39,14 +39,7 @@ function getRandomQuote(){
     var randInt=Math.floor(Math.random()*quoteList.length);
     return quoteList[randInt];
 }
-//opening page of the graphic artist                   
-function openIconpage(){
-     window.open("https://dribbble.com/olivers");
-}
-//opening flaticon page
-function openFlaticonpage(){
-     window.open("http://www.flaticon.com/");
-}
+
     
          
                   
