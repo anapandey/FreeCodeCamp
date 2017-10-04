@@ -14,7 +14,7 @@ $(document).ready(function(){
         var apiURL = "http://api.openweathermap.org/data/2.5/weather?q=" + mycity + "," + mycountry + "" + unit + "" + apiKey;
         $.ajax({
             url: apiURL,
-            dataType: 'json',
+            dataType: 'jsonp',
             success: function(data) {
                 $('#cityName').html(mycity + " ," +mycountry);
                 $('#forecastText').html(data.weather[0].main + " , forecast for " + data.weather[0].description);
@@ -39,7 +39,7 @@ $(document).ready(function(){
             $.ajax({
                url:"http://api.openweathermap.org/data/2.5/weather?q=" + city + unit + apiKey,
                type:"GET",
-               dataType:"json",
+               dataType:"jsonp",
                success:function(data){
                    console.log(data);
                    $('#cityName').empty().hide().append(data.name+ " , "+data.sys.country).fadeIn(800);
